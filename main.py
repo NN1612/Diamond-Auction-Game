@@ -114,7 +114,7 @@ class Card:
     def __init__(self, suit: str, rank: str) -> None:
         self.suit = suit
         self.rank = rank
-        self.image = pygame.image.load(f"{rank}.png")
+        self.image = pygame.image.load(f"images/{rank}.png")
         
     def __eq__(self, other):
         return self.suit == other.suit and self.rank == other.rank
